@@ -150,11 +150,11 @@ def send_submission(session, submission, attempt, cookies, referer, step, user):
 
 
 
-file_name = "file_for_stepic.txt"
-current_dir = os.path.abspath(os.path.dirname(__file__))
-file_path = os.path.join(current_dir, file_name)
-
 def main(url):
+    file_name = "file_for_stepic.txt"
+    current_dir = os.path.abspath(os.path.dirname(__file__))
+    file_path = os.path.join(current_dir, file_name)
+
     cookies = open_cookies()
     headers = {'User-Agent': UA, 'user-agent': UA}
     try:
